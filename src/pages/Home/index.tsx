@@ -1,3 +1,4 @@
+import { BossBoosted } from "../../components/BossBoosted";
 import { CreatureBoosted } from "../../components/CreatureBoosted";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
@@ -13,6 +14,7 @@ export const Home = () => {
         <HomeStyled>
           <Rashid />
           <CreatureBoosted />
+          <BossBoosted />
         </HomeStyled>
       </Main>
       <Footer />

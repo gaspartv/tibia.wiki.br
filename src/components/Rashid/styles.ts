@@ -22,6 +22,23 @@ export const RashidStyled = styled.div`
       gap: 2px;
       color: var(--color-1);
       cursor: default;
+      position: relative;
+      > span {
+        visibility: hidden;
+        position: absolute;
+      }
+      :hover span {
+        visibility: visible;
+        background-color: var(--color-grey-4);
+        color: var(--color-1);
+        width: 300px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        border-radius: 4px;
+        padding: 8px;
+        text-align: center;
+      }
     }
   }
 `;

@@ -19,10 +19,16 @@ export const Rashid = () => {
   return (
     <RashidStyled>
       <div>
-        <img src={rashidImg} alt="" />
-        <p data-title="Rashid é um NPC comerciante que compra vários itens valiosos, ele está sempre alternando entre sete cidades (01 por dia). Para conseguir negociar com ele, você deve completar a The Travelling Trader Quest.">
+        <img src={rashidImg} alt="Rashid" />
+        <p>
           {rashid}
           <FcAbout />
+          <span>
+            Rashid é um NPC comerciante que compra vários itens valiosos, ele
+            está sempre alternando entre sete cidades (01 por dia). Para
+            conseguir negociar com ele, você deve completar a The Travelling
+            Trader Quest.
+          </span>
         </p>
       </div>
     </RashidStyled>

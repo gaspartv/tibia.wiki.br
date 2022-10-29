@@ -25,6 +25,7 @@ export const BossBoosted = () => {
   return (
     <BossBoostedStyled>
       <div>
+        <span></span>
         <img src={bossBoosted.image_url} alt="" />
         <p>
           {bossBoosted.name}
@@ -36,6 +37,7 @@ export const BossBoosted = () => {
             Fazer com que uma morte conte como x3 no Bosstiary.
           </span>
         </p>
+        <span></span>
       </div>
     </BossBoostedStyled>
   );

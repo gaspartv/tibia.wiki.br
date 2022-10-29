@@ -13,3 +13,7 @@ export const getDreamScarBoss = async () => {
   const { data } = await apiTibiaLabs.get<iRashid>("/dreamscar/name");
   return data;
 };
+
+export const getCharacterInfo = async (name: string) => {
+  return await apiTibiaLabs.get(`/charinfo/${name}`);
+};

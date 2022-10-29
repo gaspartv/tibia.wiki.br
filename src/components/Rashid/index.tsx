@@ -19,6 +19,7 @@ export const Rashid = () => {
   return (
     <RashidStyled>
       <div>
+        <span></span>
         <img src={rashidImg} alt="Rashid" />
         <p>
           {rashid}
@@ -31,6 +32,7 @@ export const Rashid = () => {
             Travelling Trader Quest.
           </span>
         </p>
+        <span></span>
       </div>
     </RashidStyled>
   );

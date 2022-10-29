@@ -2,18 +2,26 @@ import styled from "styled-components";
 
 export const CreatureBoostedStyled = styled.div`
   background-color: var(--color-grey-4);
+  min-width: 180px;
   width: 180px;
   height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
   box-shadow: 2px 2px 10px 0px;
   > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    justify-content: space-between;
+    max-height: 100%;
+    width: 100%;
+    > span {
+      width: 100%;
+      height: 10px;
+      background-color: var(--color-2);
+    }
     > img {
     }
     > p {

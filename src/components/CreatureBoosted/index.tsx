@@ -24,6 +24,7 @@ export const CreatureBoosted = () => {
   return (
     <CreatureBoostedStyled>
       <div>
+        <span></span>
         <img src={boosted.image_url} alt="" />
         <p>
           {boosted.name}
@@ -38,6 +39,7 @@ export const CreatureBoosted = () => {
             vezes mais rápida do que o normal).
           </span>
         </p>
+        <span></span>
       </div>
     </CreatureBoostedStyled>
   );

@@ -5,6 +5,7 @@ export const HeaderStyled = styled.header`
   background-color: var(--color-grey-4);
   box-shadow: 0px 2px 5px 0px;
   position: fixed;
+  z-index: 201;
   top: 0;
   width: 100%;
 `;
@@ -16,7 +17,11 @@ export const DivStyled = styled.div`
   justify-content: space-between;
   padding: 0 12px;
   > h1 {
+    visibility: hidden;
     color: var(--color-1);
+    @media (min-width: 425px) {
+      visibility: visible;
+    }
   }
 `;
 
@@ -32,7 +37,7 @@ export const LinkStyled = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: .3s;
+  transition: 0.3s;
   :hover {
     background-color: var(--color-grey-1);
   }

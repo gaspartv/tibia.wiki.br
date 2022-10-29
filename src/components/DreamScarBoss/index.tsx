@@ -23,6 +23,7 @@ export const DreamScarBoss = () => {
   return (
     <DreamScarBossStyled>
       <div>
+        <span></span>
         {dreamScarBoss === "Alptramun" && (
           <img src={Alptramun} alt={dreamScarBoss} />
         )}
@@ -42,15 +43,13 @@ export const DreamScarBoss = () => {
           {dreamScarBoss}
           <FcAbout />
           <span>
-            A cada server save, uma criatura é sorteada, durante esse tempo a
-            criatura selecionada irá: Render mais pontos de experiência.
-            <br />
-            Carregar mais itens do que o normal.
-            <br />
-            Seu respawn terá uma taxa mais rápida (a taxa de respawn é duas
-            vezes mais rápida do que o normal).
+            O boss da Dream Scar Arena (Dream Courts) pode variar dependendo do
+            seu servidor.
+            <br /> Usamos como base o boss que aparece na maioria dos
+            servidores.
           </span>
         </p>
+        <span></span>
       </div>
     </DreamScarBossStyled>
   );

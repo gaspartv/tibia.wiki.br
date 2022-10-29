@@ -7,6 +7,7 @@ import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Main } from "../../components/Main";
 import { Rashid } from "../../components/Rashid";
+import { SearchFast } from "../../components/SearchFast";
 
 export const Home = () => {
   return (
@@ -14,10 +15,15 @@ export const Home = () => {
       <Header />
       <Main>
         <HomeStyled>
-          <Rashid />
-          <CreatureBoosted />
-          <BossBoosted />
-          <DreamScarBoss />
+          <section>
+            <Rashid />
+            <CreatureBoosted />
+            <BossBoosted />
+            <DreamScarBoss />
+          </section>
+          <section>
+            <SearchFast />
+          </section>
         </HomeStyled>
       </Main>
       <Footer />

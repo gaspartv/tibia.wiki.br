@@ -6,6 +6,6 @@ export const apiTibiaLabs = axios.create({
 });
 
 export const apiTibiaData = axios.create({
-  baseURL: "https://api.tibiadata.com",
+  baseURL: "https://api.tibiadata.com/v3",
   timeout: 5000,
 });

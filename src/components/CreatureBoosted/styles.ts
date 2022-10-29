@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const RashidStyled = styled.div`
+export const CreatureBoostedStyled = styled.div`
   background-color: var(--color-grey-4);
   width: 180px;
   height: 120px;

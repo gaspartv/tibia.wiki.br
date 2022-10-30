@@ -1,12 +1,12 @@
 import { ModalSearchStyled } from "./styles";
 
 interface iModalSearchFastProps {
-  characterResult: string;
+  searchResult: string;
   setModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const ModalSearchFast = ({
-  characterResult,
+  searchResult,
   setModal,
 }: iModalSearchFastProps) => {
   return (
@@ -14,7 +14,7 @@ export const ModalSearchFast = ({
       <div>
         <button onClick={() => setModal(false)}>X</button>
         <span>
-          {characterResult.split("-").map((elem, index) => (
+          {searchResult.split("-").map((elem, index) => (
             <p key={index}>{elem}</p>
           ))}
         </span>

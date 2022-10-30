@@ -14,3 +14,7 @@ export const HomeStyled = styled.div`
     }
   }
 `;
+
+export const SearchStyled = styled.section`
+
+`

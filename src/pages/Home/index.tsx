@@ -1,4 +1,4 @@
-import { HomeStyled } from "./styles";
+import { HomeStyled, SearchStyled } from "./styles";
 
 import { BossBoosted } from "../../components/BossBoosted";
 import { CreatureBoosted } from "../../components/CreatureBoosted";
@@ -21,9 +21,9 @@ export const Home = () => {
             <BossBoosted />
             <DreamScarBoss />
           </section>
-          <section>
+          <SearchStyled>
             <SearchFast />
-          </section>
+          </SearchStyled>
         </HomeStyled>
       </Main>
       <Footer />

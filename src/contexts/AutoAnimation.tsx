@@ -5,7 +5,9 @@ interface iAnimationContextProps {
   children: React.ReactNode;
 }
 
-interface iAnimationContext {}
+interface iAnimationContext {
+  parent: React.MutableRefObject<null>;
+}
 
 export const AnimationContext = createContext({} as iAnimationContext);
 

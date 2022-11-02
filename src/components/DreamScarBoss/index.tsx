@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FcAbout } from "react-icons/fc";
+import { Spinner } from "@chakra-ui/react";
 
 import { getDreamScarBoss } from "../../api/tibialabs";
 import Alptramun from "../../assets/dreamscar/Alptramun.gif";
@@ -20,7 +21,7 @@ export const DreamScarBoss = () => {
     searchDreamScarBoss();
   }, []);
 
-  return (
+  return dreamScarBoss ? (
     <DreamScarBossStyled>
       <div>
         <span></span>
@@ -52,5 +53,7 @@ export const DreamScarBoss = () => {
         <span></span>
       </div>
     </DreamScarBossStyled>
+  ) : (
+    <Spinner color="red.500" />
   );
 };

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FcAbout } from "react-icons/fc";
 import { getBoss } from "../../api/tibiadata";
 import { BossBoostedStyled } from "./styles";
+import { Spinner } from "@chakra-ui/react";
 
 interface iBossBoosted {
   featured: boolean;
@@ -22,7 +23,7 @@ export const BossBoosted = () => {
     searchBossBoosted();
   }, []);
 
-  return (
+  return bossBoosted ? (
     <BossBoostedStyled>
       <div>
         <span></span>
@@ -40,5 +41,7 @@ export const BossBoosted = () => {
         <span></span>
       </div>
     </BossBoostedStyled>
+  ) : (
+    <Spinner color="red.500" />
   );
 };

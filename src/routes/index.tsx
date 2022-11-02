@@ -4,6 +4,7 @@ import { Error } from "../pages/Error";
 import { Home } from "../pages/Home";
 import { Store } from "../pages/Store";
 import { Contact } from "../pages/Contact";
+import { Quests } from "../pages/Quests";
 
 const RouterMain = () => {
   return (
@@ -11,6 +12,7 @@ const RouterMain = () => {
       <Route path="/" element={<Home />} />
       <Route path="/loja" element={<Store />} />
       <Route path="/contato" element={<Contact />} />
+      <Route path="/quests" element={<Quests />} />
 
       <Route path="*" element={<Error />} />
     </Routes>

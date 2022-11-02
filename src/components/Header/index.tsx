@@ -1,5 +1,4 @@
 import { ContainerStyled } from "../../styles/Global";
-
 import { DivStyled, HeaderStyled, LinkStyled, NavStyled } from "./styles";
 
 export const Header = () => {
@@ -7,11 +6,11 @@ export const Header = () => {
     <HeaderStyled>
       <ContainerStyled>
         <DivStyled>
-          <h1>Tibia Wiki BR</h1>
+          <h1>TIBIA WIKI BR</h1>
           <NavStyled>
-            <LinkStyled to="/"> Início </LinkStyled>
-            <LinkStyled to="/loja"> Loja </LinkStyled>
-            <LinkStyled to="/contato"> Contato </LinkStyled>
+            <LinkStyled to="/"> Início <span></span></LinkStyled>
+            <LinkStyled to="/loja"> Loja <span></span></LinkStyled>
+            <LinkStyled to="/contato"> Contato <span></span></LinkStyled>
           </NavStyled>
         </DivStyled>
       </ContainerStyled>

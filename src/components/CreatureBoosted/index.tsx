@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FcAbout } from "react-icons/fc";
 import { getCreatures } from "../../api/tibiadata";
 import { CreatureBoostedStyled } from "./styles";
+import { Spinner } from "@chakra-ui/react";
 
 interface iBoosted {
   featured: boolean;
@@ -21,7 +22,7 @@ export const CreatureBoosted = () => {
     searchBoosted();
   }, []);
 
-  return (
+  return boosted ? (
     <CreatureBoostedStyled>
       <div>
         <span></span>
@@ -42,5 +43,7 @@ export const CreatureBoosted = () => {
         <span></span>
       </div>
     </CreatureBoostedStyled>
+  ) : (
+    <Spinner color="red.500" />
   );
 };

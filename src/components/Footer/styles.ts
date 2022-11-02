@@ -6,6 +6,7 @@ export const FooterStyled = styled.footer`
   width: 100%;
   background-color: var(--color-5);
   box-shadow: 0px -2px 5px 0px;
+  margin-top: 100px;
   p {
     text-align: center;
     color: var(--color-1);

@@ -47,6 +47,9 @@ export const GlobalStyled = createGlobalStyle`
     :root {
         --font-family-1: 'Poppins', sans-serif;
         --font-family-2: 'Fuzzy Bubbles', cursive;
+        --font-family-3: 'Permanent Marker', cursive;
+
+        --color-white: #f9f9f9;
 
         --color-1: #c0c0c0;
         --color-2: #348e91;

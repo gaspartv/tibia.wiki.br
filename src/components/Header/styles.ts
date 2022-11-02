@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const entring = keyframes`
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+`;
 
 export const HeaderStyled = styled.header`
   background-color: var(--color-grey-4);
@@ -18,7 +27,10 @@ export const DivStyled = styled.div`
   padding: 0 12px;
   > h1 {
     visibility: hidden;
-    color: var(--color-1);
+    color: var(--color-white);
+    font-family: var(--font-family-3);
+    font-size: 28px;
+    cursor: default;
     @media (min-width: 425px) {
       visibility: visible;
     }
@@ -31,14 +43,23 @@ export const NavStyled = styled.nav`
 `;
 
 export const LinkStyled = styled(Link)`
-  background-color: var(--color-grey-3);
+  font-family: var(--font-family-2);
   padding: 8px;
   color: var(--color-1);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.3s;
+  position: relative;
   :hover {
-    background-color: var(--color-grey-1);
+    color: var(--color-white);
+  }
+  :hover span {
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    height: 1px;
+    background-color: var(--color-2);
+    animation: ${entring} 0.2s linear forwards;
   }
 `;

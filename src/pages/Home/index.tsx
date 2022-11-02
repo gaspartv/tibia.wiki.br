@@ -1,4 +1,5 @@
-import { HomeStyled, SearchStyled } from "./styles";
+import { Diary, HomeStyled, ImportantTopics } from "./styles";
+import { ArrowRightIcon } from "@chakra-ui/icons";
 
 import { BossBoosted } from "../../components/BossBoosted";
 import { CreatureBoosted } from "../../components/CreatureBoosted";
@@ -7,7 +8,9 @@ import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Main } from "../../components/Main";
 import { Rashid } from "../../components/Rashid";
-import { SearchFast } from "../../components/SearchFast";
+
+import quest from "../../assets/quests.png";
+import creatures from "../../assets/creatures.png";
 
 export const Home = () => {
   return (
@@ -15,15 +18,34 @@ export const Home = () => {
       <Header />
       <Main>
         <HomeStyled>
-          <section>
+          <Diary>
             <Rashid />
             <CreatureBoosted />
             <BossBoosted />
             <DreamScarBoss />
-          </section>
-          <SearchStyled>
-            <SearchFast />
-          </SearchStyled>
+          </Diary>
+          <ImportantTopics>
+            <div>
+              <h3>
+                <ArrowRightIcon w={3} h={3} />
+                Biblioteca
+              </h3>
+            </div>
+            <ul>
+              <li>
+                <span></span>
+                <img src={quest} alt="Quest" />
+                <p>Quests</p>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+                <img src={creatures} alt="Criaturas" />
+                <p>Criaturas</p>
+                <span></span>
+              </li>
+            </ul>
+          </ImportantTopics>
         </HomeStyled>
       </Main>
       <Footer />

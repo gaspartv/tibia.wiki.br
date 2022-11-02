@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const RashidStyled = styled.div`
   background-color: var(--color-grey-4);
-  min-width: 180px;
   width: 180px;
   height: 120px;
   display: flex;

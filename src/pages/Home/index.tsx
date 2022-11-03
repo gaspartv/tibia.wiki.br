@@ -1,4 +1,4 @@
-import { Diary, HomeStyled, ImportantTopics } from "./styles";
+import { CardStyled, Diary, HomeStyled, ImportantTopics } from "./styles";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 
 import { BossBoosted } from "../../components/BossBoosted";
@@ -31,20 +31,20 @@ export const Home = () => {
                 Biblioteca
               </h3>
             </div>
-            <ul>
-              <li>
+            <section>
+              <CardStyled to="/quests">
                 <span></span>
                 <img src={quest} alt="Quest" />
                 <p>Quests</p>
                 <span></span>
-              </li>
-              <li>
+              </CardStyled>
+              <CardStyled to="/criaturas">
                 <span></span>
                 <img src={creatures} alt="Criaturas" />
                 <p>Criaturas</p>
                 <span></span>
-              </li>
-            </ul>
+              </CardStyled>
+            </section>
           </ImportantTopics>
         </HomeStyled>
       </Main>

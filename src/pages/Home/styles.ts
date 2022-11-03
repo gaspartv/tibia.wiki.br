@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
 const entring = keyframes`
@@ -49,44 +50,45 @@ export const ImportantTopics = styled.section`
       cursor: default;
     }
   }
-  > ul {
+  > section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12px;
     gap: 16px;
-    > li {
-      background-color: var(--color-grey-4);
-      width: 180px;
-      height: 120px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 2px 2px 10px 0px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: 0.3s;
-      > span {
-        height: 2px;
-      }
-      :hover > span {
-        height: 2px;
-        background-color: var(--color-2);
-        width: 75%;
-        border-radius: 5px;
-        animation: ${entring} 0.2s linear forwards;
-      }
-      > img {
-        height: 70px;
-      }
-      > p {
-        color: var(--color-1);
-        transition: 0.3s;
-      }
-      :hover > p {
-        color: var(--color-white);
-      }
-    }
+  }
+`;
+
+export const CardStyled = styled(Link)`
+  background-color: var(--color-grey-4);
+  width: 180px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 10px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  > span {
+    height: 2px;
+  }
+  :hover > span {
+    height: 2px;
+    background-color: var(--color-2);
+    width: 75%;
+    border-radius: 5px;
+    animation: ${entring} 0.2s linear forwards;
+  }
+  > img {
+    height: 70px;
+  }
+  > p {
+    color: var(--color-1);
+    transition: 0.3s;
+  }
+  :hover > p {
+    color: var(--color-white);
   }
 `;

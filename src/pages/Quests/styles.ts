@@ -28,7 +28,7 @@ export const HeaderStyled = styled.div`
   box-shadow: 0px 2px 5px 0px;
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: space-between;
 `;
 
 export const CardStyled = styled(Link)`
@@ -66,5 +66,41 @@ export const CardStyled = styled(Link)`
   @media (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-between;
+  }
+`;
+
+export const DivSearchStyled = styled.form`
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  > button {
+    height: 100%;
+    width: 40px;
+    background-color: var(--color-3);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid var(--color-2);
+    border-left: transparent;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    :hover {
+      background-color: var(--color-2);
+    }
+  }
+`;
+
+export const InputStyled = styled.input`
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    padding: 8px;
+    color: var(--color-5);
+    ::placeholder {
+      color: var(--color-1);
+    }
   }
 `;

@@ -5,13 +5,16 @@ import { dataQuests } from "../../data/data_quests";
 import { ContainerStyled } from "../../styles/Global";
 import {
   CardStyled,
+  DivSearchStyled,
   HeaderStyled,
+  InputStyled,
   ListStyled,
   QuestStyled,
   SectionStyled,
 } from "./styles";
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon, Search2Icon } from "@chakra-ui/icons";
 import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
+import { useForm } from "react-hook-form";
 
 interface iQuestList {
   id: number;
@@ -46,6 +49,15 @@ export const Quests = () => {
     }
   }, [orderList]);
 
+  const searchQuest = ({ search }: any) => {
+    const result = dataQuests.filter((elem) =>
+      elem.title.toLowerCase().includes(search.toLowerCase())
+    );
+    setListQuest(result);
+  };
+
+  const { register, handleSubmit } = useForm();
+
   return (
     <>
       <Header />
@@ -54,6 +66,16 @@ export const Quests = () => {
           <SectionStyled>
             <ListStyled>
               <HeaderStyled>
+                <DivSearchStyled onSubmit={handleSubmit(searchQuest)}>
+                  <InputStyled
+                    type="text"
+                    placeholder="Qual quest você procura?"
+                    {...register("search")}
+                  />
+                  <button type="submit">
+                    <Search2Icon />
+                  </button>
+                </DivSearchStyled>
                 <Menu>
                   <MenuButton
                     colorScheme="#348e91"

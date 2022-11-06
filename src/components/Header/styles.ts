@@ -17,6 +17,7 @@ export const HeaderStyled = styled.header`
   z-index: 201;
   top: 0;
   width: 100%;
+  min-width: 320px;
 `;
 
 export const DivStyled = styled.div`
@@ -31,7 +32,7 @@ export const DivStyled = styled.div`
     font-family: var(--font-family-3);
     font-size: 28px;
     cursor: default;
-    @media (min-width: 425px) {
+    @media (min-width: 768px) {
       visibility: visible;
     }
   }

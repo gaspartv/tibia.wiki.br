@@ -27,6 +27,8 @@ export const HeaderStyled = styled.div`
   border-radius: 6px;
   box-shadow: 0px 2px 5px 0px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   width: 100%;
   justify-content: space-between;
 `;
@@ -92,15 +94,12 @@ export const DivSearchStyled = styled.form`
 `;
 
 export const InputStyled = styled.input`
-  display: none;
-  @media (min-width: 768px) {
-    display: block;
-    width: 100%;
-    border-radius: 6px;
-    padding: 8px;
-    color: var(--color-5);
-    ::placeholder {
-      color: var(--color-1);
-    }
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  padding: 8px;
+  color: var(--color-5);
+  ::placeholder {
+    color: var(--color-1);
   }
 `;
